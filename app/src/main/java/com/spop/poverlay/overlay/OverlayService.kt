@@ -27,10 +27,10 @@ import androidx.lifecycle.lifecycleScope
 import com.spop.poverlay.ConfigurationRepository
 import com.spop.poverlay.MainActivity
 import com.spop.poverlay.R
-import com.spop.poverlay.sensor.DeadSensorDetector
-import com.spop.poverlay.sensor.interfaces.DummySensorInterface
-import com.spop.poverlay.sensor.interfaces.PelotonBikeSensorInterfaceV1New
-import com.spop.poverlay.sensor.interfaces.PelotonBikePlusSensorInterface
+import com.spop.peloton.sensors.DeadSensorDetector
+import com.spop.peloton.sensors.interfaces.DummySensorInterface
+import com.spop.peloton.sensors.interfaces.PelotonBikeSensorInterfaceV1New
+import com.spop.peloton.sensors.interfaces.PelotonBikePlusSensorInterface
 import com.spop.poverlay.util.IsBikePlus
 import com.spop.poverlay.util.IsRunningOnPeloton
 import com.spop.poverlay.util.LifecycleEnabledService
@@ -59,7 +59,7 @@ class OverlayService : LifecycleEnabledService() {
         //Defined relative to the height of the screen
         const val VerticalMoveDragThreshold = .5f
 
-        // Replace with DeadSensorInterface to simulate a dead sensor
+        // Replace with com.spop.peloton.sensors.interfaces.DeadSensorInterface to simulate a dead sensor
         val EmulatorSensorInterface by lazy { DummySensorInterface() }
     }
 

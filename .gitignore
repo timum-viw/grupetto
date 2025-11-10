@@ -16,3 +16,13 @@
 local.properties
 app/release
 app/debug
+
+# Peloton sensors library build files
+peloton-sensors/build/
+peloton-sensors/.gradle/
+peloton-sensors/.cxx/
+peloton-sensors/.externalNativeBuild/
+peloton-sensors/*.iml
+peloton-sensors/local.properties
+peloton-sensors/release/
+peloton-sensors/debug/

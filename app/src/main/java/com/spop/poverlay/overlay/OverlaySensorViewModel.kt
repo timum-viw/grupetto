@@ -6,8 +6,8 @@ import androidx.compose.runtime.mutableStateListOf
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.spop.poverlay.MainActivity
-import com.spop.poverlay.sensor.DeadSensorDetector
-import com.spop.poverlay.sensor.interfaces.SensorInterface
+import com.spop.peloton.sensors.DeadSensorDetector
+import com.spop.peloton.sensors.interfaces.SensorInterface
 import com.spop.poverlay.util.smoothSensorValue
 import com.spop.poverlay.util.tickerFlow
 import kotlinx.coroutines.Dispatchers
